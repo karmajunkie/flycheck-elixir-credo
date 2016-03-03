@@ -42,7 +42,7 @@
 
 (flycheck-define-checker elixir-credo
   "Defines a checker for elixir with credo"
-  :command ("mix" "credo" "--format=flycheck --stdin" source-original)
+  :command ("mix" "credo" "--format=flycheck" "--stdin" source-original)
   :error-patterns
   (
    (info line-start (file-name) ":" line ": " (or "F" "D" "R")  ": " (message) line-end)
