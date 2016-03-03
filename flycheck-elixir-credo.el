@@ -50,7 +50,7 @@
    (warning line-start (file-name) ":" line ": " (or "C" "W")  ": " (message) line-end)
    )
   :modes (elixir-mode)
-  ;;:next-checkers ((warning . elixir-dogma))
+  :next-checkers ((warning . elixir-dogma))
 )
 
 ;;;###autoload
