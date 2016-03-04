@@ -46,8 +46,10 @@
   :standard-input t
   :error-patterns
   (
-   (warning line-start (file-name) ":" line ":" column ": " (or "F" "D" "R" "C" "W")  ": " (message) line-end)
-   (warning line-start (file-name) ":" line ": " (or "F" "D" "R" "C" "W")  ": " (message) line-end)
+   (info line-start (file-name) ":" line ":" column ": " (or "F" "R" "C")  ": " (message) line-end)
+   (info line-start (file-name) ":" line ": " (or "F" "D" "R" "C" "W")  ": " (message) line-end)
+   (warning line-start (file-name) ":" line ":" column ": " (or "D" "W")  ": " (message) line-end)
+   (warning line-start (file-name) ":" line ": " (or "D" "W")  ": " (message) line-end)
    )
   :modes (elixir-mode)
   :next-checkers ((warning . elixir-dogma))
