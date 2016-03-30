@@ -6,14 +6,23 @@ This repository contains an flycheck checker for linting elixir with credo.
 ### Pre-requisites
 
 For this checker to work properly, you will need `mix` installed, and you will
-need a global installation of `mix credo`.
+need a global installation of `mix credo` and `bunt`.
 
-For example:
+To install bunt:
+
+    git clone https://github.com/rrrene/bunt
+    cd bunt
+    mix archive.build
+    mix archive.install
+
+To install credo:
 
     git clone https://github.com/dlpil/credo
     cd credo
     mix archive.build
     mix archive.install
+
+If there is an update to either package, just pull the repo, and rebuild/reinstall.
 
 You should now be able to install the emacs package with your preferred
 configuration method.  You can register the package by calling:
