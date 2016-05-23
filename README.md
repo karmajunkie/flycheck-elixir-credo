@@ -35,4 +35,4 @@ configuration method.  You can register the package by calling:
 
 If you are using spacemacs, you can find a [contrib layer for using
 flycheck-elixir-credo
-[here](https://github.com/obmarg/dotfiles/tree/master/spacemacs.d/elixir-credo)
+[here](https://github.com/smeevil/flycheck-elixir-credo/blob/master/packages.el)
