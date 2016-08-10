@@ -17,7 +17,7 @@ To install bunt:
 
 To install credo:
 
-    git clone https://github.com/dlpil/credo
+    git clone https://github.com/rrrene/credo
     cd credo
     mix archive.build
     mix archive.install
