@@ -44,6 +44,8 @@
   "Defines a checker for elixir with credo"
   :command ("mix" "credo" "--format" "flycheck" source-inplace)
   :standard-input t
+  :working-directory (lambda (checker)
+                       (locate-dominating-file default-directory "mix.exs"))
   :error-patterns
   (
    (info line-start (file-name) ":" line ":" column ": " (or "F" "R" "C")  ": " (message) line-end)
